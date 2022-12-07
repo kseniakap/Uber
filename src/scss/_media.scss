@@ -1,0 +1,410 @@
+@media (max-width: 1200px) {
+  .menu {
+    &_link {
+      font-size: 13px;
+    }
+    &_item {
+      padding-right: 20px;
+    }
+  }
+  .main {
+    &_header {
+      font-size: 48px;
+    }
+    &_subheader {
+      font-size: 34px;
+    }
+  }
+  .mobile_item {
+    width: 300px;
+  }
+
+  .reason {
+    .reason_descr {
+      width: 300px;
+    }
+    .reason_item {
+      align-items: flex-start;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .title {
+    font-size: 26px;
+  }
+  .menu {
+    &_link {
+      font-size: 10px;
+    }
+    &_item {
+      padding-right: 10px;
+    }
+  }
+
+  .subheader {
+    &_tel {
+      font-size: 21px;
+    }
+    &_button {
+      width: 100%;
+      height: 41px;
+      margin-top: 20px;
+    }
+    .logo {
+      &_img {
+        width: 100%;
+      }
+      &_text {
+        font-size: 12px;
+        line-height: 24px;
+      }
+    }
+  }
+  .main {
+    &_header {
+      font-size: 40px;
+    }
+    &_subheader {
+      font-size: 31px;
+    }
+    &_descr {
+      margin-top: 45px;
+    }
+    &_btn {
+      margin-top: 80px;
+    }
+  }
+
+  .reason {
+    .reason_item {
+      flex-direction: column;
+      align-items: center;
+
+      & .reason_icon {
+        margin-bottom: 20px;
+        margin-right: 0px;
+      }
+    }
+  }
+  .choice {
+    .black_block {
+      .img_car {
+        width: 90%;
+      }
+    }
+  }
+  .mobile {
+    &_item {
+      .mobile_text {
+        font-size: 20px;
+      }
+    }
+  }
+  .world {
+    min-height: 580px;
+  }
+  .footer {
+    &_block {
+      width: 260px;
+    }
+    &_links {
+      &_lang {
+        line-height: 28px;
+      }
+      &_main a {
+        font-size: 14px;
+        line-height: 52px;
+      }
+    }
+  }
+  .xs-hidden {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s all;
+    &_active {
+      left: 0;
+    }
+    &_item {
+      border: none;
+      padding-right: 0;
+      margin-top: 12px;
+    }
+    &_link {
+      font-size: 20px;
+    }
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    height: 15px;
+    width: 30px;
+    transform: translateY(-50%);
+    span {
+      background: white;
+      display: block;
+      width: 100%;
+      height: 2px;
+      margin-bottom: 3px;
+      transition: 0.5 all;
+    }
+    &_active {
+      span {
+        margin-bottom: -3px;
+        &:nth-child(1) {
+          transform: translateY(5px) rotate(-45deg);
+        }
+        &:nth-child(2) {
+          display: none;
+        }
+        &:nth-child(3) {
+          transform: translateY(5px) rotate(45deg);
+        }
+      }
+    }
+  }
+  .subheader {
+    &_tel_hid {
+      display: block;
+    }
+    .tel-hidden {
+      font-size: 20px;
+      display: block;
+      text-align: center;
+      line-height: 36px;
+    }
+    .logo_img {
+      width: 85%;
+    }
+    &_button {
+      margin: 0 auto;
+      display: block;
+      width: 75%;
+    }
+  }
+  .xs-hidden {
+    display: none;
+  }
+  .main {
+    &_header {
+      line-height: 45px;
+      font-size: 37px;
+    }
+    &_subheader {
+      font-size: 28px;
+    }
+  }
+  .choice {
+    .black_block {
+      .img_car {
+        transform: translate(-50%, 44%);
+      }
+    }
+  }
+  .footer {
+    &_block {
+      width: 210px;
+    }
+    &_social {
+      padding-top: 20px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  header {
+    height: 32px;
+  }
+  .subheader {
+    top: 32px;
+    height: 62px;
+    .tel-hidden {
+      font-size: 12px;
+      margin-top: 11px;
+    }
+    .logo_text {
+      display: none;
+    }
+    .logo_img {
+      width: 130px;
+      height: 15px;
+      margin-top: 35px;
+    }
+    &_button {
+      width: 110px;
+      height: 22px;
+      margin-top: 0px;
+      font-size: 10px;
+      line-height: 22px;
+    }
+  }
+
+  .main {
+    min-height: 400px;
+    padding: 147px 0 34px 0;
+    &_header {
+      font-size: 30px;
+      padding: 0 24px;
+      line-height: 35px;
+    }
+    &_subheader {
+      margin-top: 33px;
+      padding: 0 13px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+    &_descr {
+      display: none;
+    }
+    &_btn {
+      width: 189px;
+      height: 50px;
+      font-size: 16px;
+      line-height: 50px;
+    }
+  }
+  .menu {
+    width: 85%;
+    &_item {
+      width: 100%;
+      text-align: center;
+      padding: 5px 0;
+    }
+    &_link {
+      display: block;
+    }
+  }
+  .reason {
+    padding: 25px 0 36px 0;
+    .reason_item {
+      margin-top: 26px;
+      .reason_icon {
+        height: 100px;
+        width: 100px;
+      }
+      .reason_descr {
+        width: 292px;
+        margin-top: 23px;
+        .reason_title {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .title {
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 16px;
+  }
+  .subtitle {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .mobile {
+    min-height: 1821px;
+    padding-bottom: 43px;
+    &_item {
+      width: 290px;
+      .mobile_text {
+        height: 51px;
+      }
+    }
+  }
+  .choice {
+    min-height: 393px;
+    .black_block {
+      padding: 24px 0 31px 0;
+      min-height: 393px;
+      .title_choice {
+        display: none;
+      }
+      .img_car {
+        width: 300px;
+        height: 190px;
+        transform: translate(-50%, 27%);
+      }
+      .subtitle_choice {
+        display: none;
+      }
+    }
+    .white_block {
+      display: none;
+    }
+  }
+
+  .footer {
+    &_links {
+      width: 100%;
+    }
+  }
+  .white_hidden_text {
+    font-weight: 300;
+    font-size: 17px;
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    margin-top: 64%;
+    color: rgb(249, 248, 248);
+  }
+  .require {
+    padding: 24px 0 24px 0;
+    &_title {
+      font-size: 16px;
+    }
+    li {
+      font-size: 14px;
+      line-height: 16px;
+      &::before {
+        top: -1px;
+      }
+    }
+    &_descr {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    &_block {
+      margin: 15px 0;
+    }
+    &_list {
+      margin-top: 10px;
+    }
+  }
+  .world {
+    min-height: 360px;
+    padding: 26px 0 29.5px 0;
+    .label {
+      width: 75px;
+      height: 22px;
+    }
+    &_link {
+      display: block;
+      margin-top: 48%;
+      transform: inherit;
+      position: static;
+    }
+  }
+  .footer {
+    min-height: 201px;
+    &_block {
+      width: 255px;
+      height: 6px;
+    }
+    &_links_sub a {
+      font-size: 9px;
+    }
+  }
+}
